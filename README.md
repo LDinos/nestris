@@ -16,5 +16,5 @@ The default controls are:
 ## Options
 You can find some options in the .ini files in the game folder. In player.ini, you can change your username that appears in Online. In controls.ini you can change the keybinds
 
-##Online
+## Online
 If you want to host, make sure to Port forward ports 6969
