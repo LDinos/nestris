@@ -80,6 +80,12 @@ else
 	var c = global.line_drought > 10 ? c_maroon+abs(sin(current_time/1000)*127) : c_white
 	draw_sprite_ext(spr_small_i,0,xx+48, starty +1*32, 1,1,0,c,1)
 	draw_text_transformed_color(xx+48, starty +2*32, string(global.line_drought),.75,.75,0,c,c,c,c,1)
+	starty += 4*32
+	
+	//DROUGHT OF PLAYER2
+	draw_rectangle_color(xx,starty,xx+3*32,starty + 3*32,c_black,c_black,c_black,c_black,false)
+	var tetris_lead = (score - global.score2) / BASE_VAL_TETRIS*(global.level+1)
+	draw_text_transformed_color(xx+48, starty +48, "TRTLD\n " + string(tetris_lead),.75,.75,0,col,col,col,col,1)
 	
 	}
 	
@@ -114,18 +120,24 @@ else
 	draw_text(xx+96/2,starty+(((starty + 3*32) - starty)/2),"LVL " + string(global.level2))
 	draw_set_font(fnt_numbers)
 	starty += 4*32
-	//TETRIS RATE OF ME
+	//TETRIS RATE OF PLAYER2
 	var trt = 0
 	if (global.num_clears2 > 0) trt = round((global.tetrises2/global.num_clears2)*100)
 	draw_rectangle_color(xx,starty,xx+3*32,starty + 3*32,c_black,c_black,c_black,c_black,false)
 	draw_text(xx+48,starty+48,"TRT\n "+string(trt) + "%")
 	starty += 4*32
 	
-	//DROUGHT OF ME
+	//DROUGHT OF PLAYER2
 	draw_rectangle_color(xx,starty,xx+3*32,starty + 3*32,c_black,c_black,c_black,c_black,false)
 	var c = global.line_drought2 > 10 ? c_maroon+abs(sin(current_time/1000)*127) : c_white
 	draw_sprite_ext(spr_small_i,0,xx+48, starty +1*32, 1,1,0,c,1)
 	draw_text_transformed_color(xx+48, starty +2*32, string(global.line_drought2),.75,.75,0,c,c,c,c,1)
+	starty += 4*32
+	
+	//DROUGHT OF PLAYER2
+	draw_rectangle_color(xx,starty,xx+3*32,starty + 3*32,c_black,c_black,c_black,c_black,false)
+	var tetris_lead = (global.score2 - score) / BASE_VAL_TETRIS*(global.level2+1)
+	draw_text_transformed_color(xx+48, starty +48, "TRTLD\n " + string(tetris_lead),.75,.75,0,col,col,col,col,1)
 	
 	}
 	
