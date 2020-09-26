@@ -82,9 +82,10 @@ else
 	draw_text_transformed_color(xx+48, starty +2*32, string(global.line_drought),.75,.75,0,c,c,c,c,1)
 	starty += 4*32
 	
-	//DROUGHT OF PLAYER2
+	//TRTLD OF ME
 	draw_rectangle_color(xx,starty,xx+3*32,starty + 3*32,c_black,c_black,c_black,c_black,false)
-	var tetris_lead = (score - global.score2) / BASE_VAL_TETRIS*(global.level+1)
+	var lvl = (score - global.score2) < 0 ? global.level2 : global.level
+	var tetris_lead = (score - global.score2) / (BASE_VAL_TETRIS*(lvl+1))
 	draw_text_transformed_color(xx+48, starty +48, "TRTLD\n " + string(tetris_lead),.75,.75,0,col,col,col,col,1)
 	
 	}
@@ -134,9 +135,10 @@ else
 	draw_text_transformed_color(xx+48, starty +2*32, string(global.line_drought2),.75,.75,0,c,c,c,c,1)
 	starty += 4*32
 	
-	//DROUGHT OF PLAYER2
+	//TRLD OF PLAYER2
 	draw_rectangle_color(xx,starty,xx+3*32,starty + 3*32,c_black,c_black,c_black,c_black,false)
-	var tetris_lead = (global.score2 - score) / BASE_VAL_TETRIS*(global.level2+1)
+	var lvl = (score - global.score2) < 0 ? global.level2 : global.level
+	var tetris_lead = (global.score2 - score) / (BASE_VAL_TETRIS*(lvl+1))
 	draw_text_transformed_color(xx+48, starty +48, "TRTLD\n " + string(tetris_lead),.75,.75,0,col,col,col,col,1)
 	
 	}
