@@ -12,6 +12,7 @@ function check_piece_movement(frames_needed){
 				das_cooldown = DAS_SPEED
 				audio_play_sound(snd_piece_move,0,false)
 				x+=xtogo
+				make_ghost_piece()
 				if (global.online)
 				{
 					var buff = xtogo>0 ? NET_MOVE_RIGHT : NET_MOVE_LEFT

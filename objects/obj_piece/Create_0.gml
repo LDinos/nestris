@@ -7,6 +7,9 @@ y += sprite_yoffset //center me on the grid
 
 
 if (sprite_index == spr_piece_i) x-=32 //if I am I piece, put me in the real center (other pieces arent really in center)
+ghost_x = x
+ghost_y = y
+make_ghost_piece()
 das_cooldown = 0 //cooldown before the held button makes the piece move again
 rot_cooldown = 0 //this tells which way to rotate the piece. -1 -> clockwise, 1 -> counter clockwise
 gravity_speed = find_level_frame_speed() //how many frames does it take for the piece to go down

@@ -29,7 +29,6 @@ if (!dont_move)
 			{
 				if (image_angle == -90) {image_angle = 0; if (sprite_index == spr_piece_s) || (sprite_index == spr_piece_z) y+= GRID}
 				else {image_angle = -90; if (sprite_index == spr_piece_s) || (sprite_index == spr_piece_z) y-= GRID}
-				//if (sprite_index == spr_piece_s || sprite_index == spr_piece_z) y+= GRID*sign(image_angle)
 			}
 			else if (sprite_index != spr_piece_o) {image_angle += 90*rot_cooldown; if (abs(image_angle) == 360) image_angle = 0}
 			
@@ -37,6 +36,7 @@ if (!dont_move)
 			else
 			{
 				audio_play_sound(snd_piece_rotation,0,false)
+				make_ghost_piece()
 				if (global.online)
 				{
 					var buff = rot_cooldown == 1 ? NET_ROTATE_LEFT : NET_ROTATE_RIGHT

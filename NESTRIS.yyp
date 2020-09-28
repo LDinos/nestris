@@ -22,6 +22,7 @@
     {"id":{"name":"spr_piece_t_180","path":"sprites/spr_piece_t_180/spr_piece_t_180.yy",},"order":15,},
     {"id":{"name":"put_piece","path":"scripts/put_piece/put_piece.yy",},"order":1,},
     {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},"order":11,},
+    {"id":{"name":"make_ghost_piece","path":"scripts/make_ghost_piece/make_ghost_piece.yy",},"order":10,},
     {"id":{"name":"snd_piece_place","path":"sounds/snd_piece_place/snd_piece_place.yy",},"order":2,},
     {"id":{"name":"obj_joinip","path":"objects/obj_joinip/obj_joinip.yy",},"order":10,},
     {"id":{"name":"spr_piece_z_90","path":"sprites/spr_piece_z_90/spr_piece_z_90.yy",},"order":13,},
@@ -112,7 +113,7 @@
   ],
   "IncludedFiles": [
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"controls.ini","resourceType":"GMIncludedFile",},
-    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"player.ini","resourceType":"GMIncludedFile",},
+    {"CopyToMask":153157610357391598,"filePath":"datafiles","resourceVersion":"1.0","name":"player.ini","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.0.529",

@@ -25,5 +25,6 @@ ini_close()
 
 ini_open("player.ini")
 	global.user = ini_read_string("User","Name","Player")
+	global.ghost_allowed = ini_read_real("User","ghost_allowed",false)
 	global.user2 = "Player"
 ini_close()

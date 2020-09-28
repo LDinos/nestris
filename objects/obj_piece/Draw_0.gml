@@ -10,5 +10,6 @@ shader_set(shd_hue)
 shader_set_uniform_f( global.hueshift, (global.level*62 mod 620)/100)
 //draw_sprite_ext(spr,0,x,y,1,1,0,global.level_colors[(global.level mod 10)],1)
 draw_sprite(spr,0,x,y)
+if global.ghost_allowed draw_sprite_ext(spr,0,x,ghost_y,1,1,0,c_white,0.4)
 shader_reset()
 
