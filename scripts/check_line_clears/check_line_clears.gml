@@ -57,6 +57,12 @@ function check_line_clears(player2){
 				if !player2 {score += BASE_VAL_TETRIS*(global.level+1); global.tetrises++}
 				else {global.score2 += BASE_VAL_TETRIS*(global.level2+1); global.tetrises2++}					
 				audio_play_sound(snd_tetris,0,false)
+				/*var flash = instance_create_depth(0,0,-2,obj_white)
+				if (global.online)
+				{
+					if (player2 && global.amhost) || (!player2 && !global.amhost) flash.x += room_width
+					else flash.x -= room_width
+				}*/
 				break;			
 		}
 	}

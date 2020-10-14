@@ -3,7 +3,7 @@ function put_piece(player2){
 	var piece = obj_piece
 	var block = obj_block
 	var gridrow = (y -  obj_board.y )div GRID
-	var entry_delay = clamp((20 - gridrow),12,30)
+	var entry_delay = clamp((20 - gridrow),12,34)
 	//show_message(string(y -  obj_board.y ))
 	if player2 {piece = obj_piece2; block = obj_block2;}
 	else audio_play_sound(snd_piece_place,0,false)

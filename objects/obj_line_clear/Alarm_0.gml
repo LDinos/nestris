@@ -20,5 +20,5 @@ else
 	instance_destroy(instance_position(x+GRID*loops-16,y,obj_block))
 	instance_destroy(instance_position(x-GRID*loops+16,y,obj_block))
 	loops++
-	alarm[0] = 4
+	alarm[0] = 5
 }

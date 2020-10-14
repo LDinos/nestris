@@ -7,7 +7,6 @@ y += sprite_yoffset //center me on the grid
 
 
 if (sprite_index == spr_piece_i) x-=32 //if I am I piece, put me in the real center (other pieces arent really in center)
-ghost_x = x
 ghost_y = y
 make_ghost_piece()
 das_cooldown = 0 //cooldown before the held button makes the piece move again

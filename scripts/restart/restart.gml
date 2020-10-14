@@ -39,5 +39,5 @@ function restart(){
 		}
 	}
 	with(global.net) alarm[0] = 60
-	audio_play_sound(snd_restart,0,0)
+	if !audio_is_playing(snd_restart) audio_play_sound(snd_restart,0,0)
 }

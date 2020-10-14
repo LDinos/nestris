@@ -1,4 +1,8 @@
-if keyboard_check_pressed(vk_anykey)
+if mouse_check_button_pressed(mb_right)
+{
+	str = clipboard_get_text()
+}
+else if keyboard_check_pressed(vk_anykey)
 {
 	if (keyboard_lastkey == vk_backspace)
 	{
